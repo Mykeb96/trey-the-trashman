@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+.youtube-page-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vh;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
+}
+
+.card-container img {
+    transition: 1.5s;
+    width: 15vw;
+    height: 20vh;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.card-container img:hover {
+    transition: 0.2s;
+    /* width: 17vw;
+    height: 22vh; */
+    cursor: pointer;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.26);
+    border: 3px solid rgba(255, 255, 255, 0.644);
+    
+    
+}
+
+.card-title {
+    font-size: 0.8vw;
+    text-align: center;
+    width: 70%;
+    /* height: 500px; */
+    color: #F6F8FF;
+    letter-spacing: 3px;
+    background: #f6f8ff33;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 2vh;
+    font-family: 'Grape Nuts', cursive;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.26);
+    
+}
+
+.videos-container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 3vh;
+    width: 85vw;
+    overflow-y: scroll;
+    height: 70vh;
+    padding-bottom: 3vh;
+}
+
+.youtube-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+.youtube-links a {
+    padding: 5px 15px 5px 15px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    color: #F6F8FF;
+    letter-spacing: 3px;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 2.2vh;
+    transition: 0.5s;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.youtube-links a:hover {
+    cursor: pointer;
+    color: #214E34;
+    background-color: #F6F8FF;
+    transition: 0.5s;
+    transform: translateY(-5px);
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.videos-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .videos-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+#video-player {
+    position: absolute;
+    height: 80vh;
+    width: 80vw;
+}
+
+.video-backdrop {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.712);
+    height: 100vh;
+    width: 100vw;
+}

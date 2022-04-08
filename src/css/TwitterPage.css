@@ -1,0 +1,19 @@
+.twitter-page-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    flex-direction: column;
+
+}
+
+.testing {
+    border: 6px outset #214E34;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.26);
+}
+
+#follow-button:hover {
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.26);
+}
