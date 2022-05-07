@@ -4,9 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="public/GC_Logo_Sticker.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">Trey The Trashman</h3>
   <a href='https://trey-the-trashman.vercel.app/'>
