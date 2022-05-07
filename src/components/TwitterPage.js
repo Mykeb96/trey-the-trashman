@@ -2,13 +2,17 @@ import React from 'react'
 import '../css/TwitterPage.css'
 import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed'
 
+
 const TwitterPage = () => {
 
 
 
   return (
+
+    // twitter live-feed embed
+
     <div className='twitter-page-container'>
-      <div className='testing'>
+      <div className='twitch-embed'>
         <TwitterTimelineEmbed
             sourceType="profile"
             screenName="TreyTheTrashman"

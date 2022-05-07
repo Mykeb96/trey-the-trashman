@@ -1,16 +1,21 @@
 import './css/App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage';
-import Nav from './components/Nav';
-import NavMenu from './components/NavMenu';
+import Nav from './components/nav/Nav';
+import NavMenu from './components/nav/NavMenu';
 import { useState } from 'react'
 import TwitterPage from './components/TwitterPage';
-import YoutubePage from './components/YoutubePage';
-import InstaPage from './components/InstaPage';
+import YoutubePage from './components/youtube/YoutubePage';
+import InstaPage from './components/instagram/InstaPage';
+import DiscordPage from './components/DiscordPage';
+import EventsPage from './components/EventsPage';
+import StorePage from './components/StorePage';
 
 function App() {
 
-  const [isNavOpen, setIsNavOpen] = useState(false)
+
+  // Handles navigation triggers
+  const [isNavOpen, setIsNavOpen] = useState(true)
 
   const handleNav = () => {
 
@@ -19,15 +24,19 @@ function App() {
   }
 
   return (
+
+    // General client-side routing for different pages
+
     <div className="App">
 
-      <Nav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      {isNavOpen ? <NavMenu isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} /> : ''}
+      <Nav onClick={() => window.location='/nav'} isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
 
       <Router>
         <Routes>
 
           <Route path='' element={<HomePage />} />
+
+          <Route path='/nav' element={<NavMenu isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />} />
 
           <Route path='/twitter' element={<TwitterPage />} />
           
@@ -37,6 +46,12 @@ function App() {
           <Route path='/youtube/highlights' element={<YoutubePage />} />
 
           <Route path='/instagram' element={<InstaPage />} />
+
+          <Route path='/discord' element={<DiscordPage />} />
+
+          <Route path='/events' element={<EventsPage />} />
+
+          <Route path='/store' element={<StorePage />} />
 
 
         </Routes>

@@ -1,9 +1,12 @@
 import React from 'react'
 
 const YoutubeCard = (props) => {
-    console.log(props.id)
+
     
   return (
+
+    // Generates a youtube video card for each video listed
+
     <div className='card-container'>
         <img src={props.thumbnail} onClick={() => {
             props.setIsVideoOpen(true)

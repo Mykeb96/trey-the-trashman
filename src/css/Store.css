@@ -1,0 +1,34 @@
+.store-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.store-container h1 {
+    transition: 1s;
+    color: white;
+    font-weight: bold;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+.store-container h1:hover {
+    transition: 1s;
+    letter-spacing: 2vw;
+    cursor: crosshair;
+}
+
+.store-container a {
+    animation: rainbow 5s infinite ease-in-out;
+}
+
+@keyframes rainbow {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: orange;}
+    100% {color: red;}
+}

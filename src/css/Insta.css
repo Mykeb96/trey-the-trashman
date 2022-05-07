@@ -4,13 +4,8 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
     background: #0a481e;
-    /* overflow-y: scroll; */
-    
-
+    align-items: center;
 }
 
 .insta-player {
@@ -18,16 +13,12 @@
     height: 80vh;
     width: 20vw;
     border-radius: 8px;
-    flex-direction: column;
     overflow-y: scroll;
-    margin-top: 7vh;
+    margin-top: 10vh;
     margin-left: 15vw;
     padding-top: 2vh;
     border: 6px outset #214E34;
     box-shadow: 20px 20px rgba(0, 0, 0, 0.26);
-    
-
-    
 }
 
 .insta-image {
@@ -36,7 +27,6 @@
     border: 2px solid rgba(255, 255, 255, 0.756);
     border-radius: 8px;
     transition: 0.2s;
-    
 }
 
 .insta-image-container {
@@ -60,9 +50,7 @@
     border-radius: 8px;
     margin-left: 1vw;
     margin-right: 1vw;
-    box-shadow: 7px 7px rgba(0, 0, 0, 0.26);
-
-    
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.26); 
 }
 
 .insta-player::-webkit-scrollbar {
@@ -71,25 +59,20 @@
 
 .insta-image:hover {
     cursor: pointer;
-    /* box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px, rgb(255, 255, 255) 0px 2px 16px 0px; */
     box-shadow: 10px 10px rgba(0, 0, 0, 0.26);
     border: 3px solid rgba(255, 255, 255, 0.644);
     transition: 0.2s;
 }
 
 .current-picture img{
- 
     width: 62%;
     border: 6px outset #214E34;
     box-shadow: 20px 20px rgba(0, 0, 0, 0.26);
-    /* margin-left: 11vw; */
 }
 
 .current-picture {
-    /* width: 1500px; */
     width: 900px;
-    margin-top: 15vh;
-    
+    margin-top: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,4 +92,35 @@
     margin-right: 1vw;
     box-shadow: 7px 7px rgba(0, 0, 0, 0.26);
     margin-top: 4vh;
+}
+
+.instagram-icon {
+    color: rgba(255, 255, 255, 0.756);
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+@media(max-width: 1366px){
+
+
+    .insta-player {
+        width: 20vw;
+        margin-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .insta-image-container {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .insta-player p {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+
 }

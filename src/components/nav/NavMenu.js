@@ -4,10 +4,11 @@ import { animated, useTransition } from 'react-spring'
 
 const NavMenu = (props) => {
 
+  // Layered transition animations for the nav menu
+
     const transition = useTransition(props.isNavOpen, {
       from: { y: 3000, opacity: 0},
-      enter: {y: 0, opacity: 1},
-      leave: {y: 3000, opacity: 0},
+      enter: {y: 0, opacity: 1}
     })
 
     const transition2 = useTransition(props.isNavOpen, {
@@ -66,6 +67,16 @@ const NavMenu = (props) => {
       delay: 900,
     })
 
+    const transition10 = useTransition(props.isNavOpen, {
+      from: { y: 3000, opacity: 0},
+      enter: {y: 0, opacity: 1},
+      leave: {y: 3000, opacity: 0},
+      delay: 400,
+    })
+
+
+
+    // Navigation handling
 
     const handleNav = () => {
 
@@ -75,15 +86,18 @@ const NavMenu = (props) => {
 
 
   return (
+
+    // The main navigation menu, with the transition animations applied
+
     <div>
 
 
-{transition((style, item) =>
-      item ? <animated.div style={style} className='nav-menu-container'>
+        {transition((style, item) =>
+          item ? <animated.div style={style} className='nav-menu-container'>
 
         {transition9((style, item) => 
           item ? <animated.div style={style} id='nav-menu-container-close' onClick={handleNav}> 
-            <AiOutlineCloseCircle />
+            <a href='/'><AiOutlineCloseCircle /></a>
           </animated.div> : ''
         )}
 
@@ -94,7 +108,7 @@ const NavMenu = (props) => {
         )}
 
         {transition3((style, item) => 
-          item ? <animated.a style={style} className='links' href='https://www.twitch.tv/treythetrashman'> 
+          item ? <animated.a style={style} className='links' href='https://www.twitch.tv/treythetrashman' target="_blank"> 
             Twitch
           </animated.a> : ''
         )}
@@ -124,8 +138,14 @@ const NavMenu = (props) => {
         )}
 
         {transition8((style, item) => 
-          item ? <animated.a style={style} className='links' href='/tournaments'> 
+          item ? <animated.a style={style} className='links' href='/events'> 
             Tournaments
+          </animated.a> : ''
+        )}
+
+        {transition10((style, item) => 
+          item ? <animated.a style={style} className='links' href='/store'> 
+            Store
           </animated.a> : ''
         )}
       

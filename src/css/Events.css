@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+.events-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.event-box {
+    background: #0a481e;
+    transition: 0.5s;
+    height: min-content;
+    width: min-content;
+    border-radius: 8px;
+    margin: 1vw;
+    padding: 4vw 2vw 4vw 2vw;
+    text-align: center;
+    border: 6px outset #214E34;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+#arcadian {
+    margin-bottom: 15vh;
+}
+
+.event-box:hover {
+    transition: 0.5s;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.26);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.event-box h4 {
+    color: #F6F8FF;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.event-box p {
+    transition: 1s;
+    justify-self: flex-end;
+    color: #F6F8FF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.event-box img{
+    transition: 1s;
+    width: 350px;
+    height: 150px;
+    border: 6px outset #214E34;
+    border-radius: 4px;
+}
+
+.event-box:hover > img {
+    transition: 0.5s;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.26);
+    transform: translateY(-10px);
+}
+
+.event-box:hover > h4 {
+    letter-spacing: 2px;
+    
+}
+
+.event-box:hover > p {
+    letter-spacing: 2px;
+    
+}
+
+.event-box-container {
+    height: 98vh;
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50vh;
+
+}
+
+.event-box-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .icons {
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+
+@media(max-width: 1366px){
+
+    .event-box-container{
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+
+}

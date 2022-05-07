@@ -9,7 +9,8 @@
     align-items: center;
     z-index: 1;
     flex-direction: column;
-    border: 0px solid #0a481e;
+    margin-bottom: 6vh;
+    
 }
 
 .nav-container svg {
@@ -63,6 +64,10 @@
     margin-top: -75vh;
     margin-right: 2vw;
     font-size: 50px;
+    color: #F6F8FF;
+}
+
+#nav-menu-container-close a{
     color: #F6F8FF;
 }
 

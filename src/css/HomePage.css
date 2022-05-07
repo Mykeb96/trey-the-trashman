@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(#214E34, #0a481e); */
     padding-top: 2vh;
     z-index: 0;
 }
@@ -13,4 +12,5 @@
     border: 6px outset #214E34;
     box-shadow: 20px 20px rgba(0, 0, 0, 0.26);
     border-radius: 8px;
+    
 }

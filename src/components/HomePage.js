@@ -10,7 +10,9 @@ const HomePage = () => {
 
       <div className='twitch-stream'>
 
-        <ReactTwitchEmbedVideo channel="treythetrashman" height={800} width={1500} theme={'dark'} />
+        {/* Twitch live-stream embed, but still needs to be sized correctly */}
+
+        <ReactTwitchEmbedVideo channel="treythetrashman" height={'700'} width={'1536'} theme={'dark'} />
 
       </div>
         
